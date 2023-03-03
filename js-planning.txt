@@ -1,0 +1,40 @@
+*When Press On Add Task Button :
+
+    **Give Input From User .. {Cheack If Value Not Equal To Null}
+
+/   **Declare An Empty Array To Store All Tasks
+
+    **Create Div With ClassName = tasks 
+        ***Div Containes TextNode That Equal To The User Input ..
+        ***Create Delete Button
+
+    **Create Object=task Has The Following Propereties :
+        *** Unique Id = Date Object .getTime() Methode
+        *** Title = User Input
+        *** Complete Status :: Boolean Value
+
+    **Store task Object In Local Storage
+        >>  Store It In An Array After Use JSON.stringify() Methode To Store Many tasks
+            In One Item In The Local Storage.
+    
+    **Cheack If There's Any Task In Local Storage :
+        If Yes : Assign Value After Use JSON.parse() Methode To Main /Tasks Array/;
+        If No : Assign Null Value To Same Array;
+
+    **Cheack If Task Div Has Done ClassName :
+        If Yes : Update Completed Status Of Task Object => True;
+        If No : Update Completed Status Of Task Object => False;
+    
+*Create Functions : 
+    ** Toggle Done ClassName : {
+        Toggling done ClassName On Task Div
+    }
+    ** Create Task Div (User Input)
+    ** Update Local Storage Values
+    ** Delete Task (Task Id)
+
+*When Press Delete Button:
+    
+    ** Delete Parent Div Task
+    ** Update Local Storage Values
+
